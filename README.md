@@ -1,10 +1,10 @@
-# MovieDB
-Dicoding Jetpack Submission
+# ARAH
+Skripsi
 
 ## Getting Started
-Hello Everyone im new in github<br>
-this is my first submission from dicoding academy<br>
-let me show the picture of my apps
+Hello Semua, saya baru dan masih awam di github<br>
+Ini proyek skripsi saya di Universitas Yarsi<br>
+Berikut gambar tampilan dari aplikasi saya
 
 
 <div style="-webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
