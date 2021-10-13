@@ -1,0 +1,6 @@
+include ':app'
+rootProject.name = "ARAH"
+
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('../ARAH/unityLibrary') // lokasi unity librari
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/asmaulhusna_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_asmaulhusna"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/background_item"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutkiri"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:background="#30BF97"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/layouttengah"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.15">
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layouttengah"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10sp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/layoutkanan"
+                app:layout_constraintStart_toEndOf="@+id/layoutkiri"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.55">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_tittle_besar_item_asmaul_husna"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="Dzul Jalaali Wal Ikram"
+                    android:textColor="@color/green_text"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="20sp"
+                    app:autoSizeMinTextSize="10sp"
+                    app:autoSizePresetSizes="@array/autosize_text_sizes_asmaulhusna_besar"
+                    app:autoSizeTextType="uniform" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_tittle_kecil_item_asmaul_husna"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="0sp"
+                    android:gravity="center_vertical"
+                    android:singleLine="false"
+                    android:text="Yang Maha Pemilik Kebesaran Dan Kemuliaan"
+                    android:textColor="@color/green_text"
+                    android:textStyle="normal|italic"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeMinTextSize="10sp"
+                    app:autoSizePresetSizes="@array/autosize_text_sizes"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutkanan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layouttengah"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.30">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_lafaz_asmaul_husna"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:gravity="right|top"
+                    android:singleLine="true"
+                    android:text="الله"
+                    android:textColor="@color/green_text"
+                    android:textStyle="bold"
+                    app:autoSizeMaxTextSize="30sp"
+                    app:autoSizeMinTextSize="10sp"
+                    app:autoSizePresetSizes="@array/autosize_text_sizes_asmaulhusna_besar"
+                    app:autoSizeTextType="uniform" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_selengkanya"
+                    android:layout_width="110sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="25sp"
+                    android:background="#212433"
+                    android:gravity="center"
+                    android:text="Selengkapnya"
+                    android:textColor="#FFFFFF"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
